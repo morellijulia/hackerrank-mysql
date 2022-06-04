@@ -1,0 +1,6 @@
+select distinct city 
+from STATION 
+where left(city,1) in ('a','e','i','o','u') 
+and right(city,1) in ('a','e','i','o','u')
+
+-- https://www.hackerrank.com/challenges/weather-observation-station-8/problem
