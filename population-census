@@ -1,0 +1,7 @@
+select sum(CITY.population)
+from CITY
+inner join COUNTRY
+on COUNTRY.code = CITY.countrycode
+where COUNTRY.continent = "Asia"
+
+-- https://www.hackerrank.com/challenges/asian-population/problem
