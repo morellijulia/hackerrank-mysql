@@ -1,0 +1,6 @@
+select CITY.name
+from CITY
+inner join COUNTRY on CITY.countrycode=COUNTRY.code
+where continent = "Africa"
+
+-- https://www.hackerrank.com/challenges/african-cities/problem
