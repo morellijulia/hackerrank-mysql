@@ -1,0 +1,4 @@
+select ROUND(ABS(max(LAT_N) - min(lat_n)),4) + ROUND(ABS(MAX(long_w) - min(LONG_W)),4) 
+from STATION
+
+-- https://www.hackerrank.com/challenges/weather-observation-station-18/problem
