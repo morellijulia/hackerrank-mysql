@@ -1,0 +1,7 @@
+select COUNTRY.continent, floor(avg(city.population))
+from COUNTRY
+inner join CITY 
+on CITY.countrycode = COUNTRY.code
+group by COUNTRY.continent
+
+-- https://www.hackerrank.com/challenges/average-population-of-each-continent/problem
