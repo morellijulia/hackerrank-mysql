@@ -1,0 +1,7 @@
+select if (grade < 8, null, name), GRADES.grade, STUDENTS.marks
+from STUDENTS
+inner join GRADES
+on STUDENTS.marks between GRADES.min_mark and GRADES.max_mark
+order by GRADES.grade desc, STUDENTS.name asc
+
+-- https://www.hackerrank.com/challenges/the-report/problem
